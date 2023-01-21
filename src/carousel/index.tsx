@@ -7,7 +7,7 @@ import { Card, CardBody, CardFooter, CardHeader, Heading, Link, Text } from "@ch
 
 interface ProjectProps {
   project: {
-    id: number;
+    id: string;
     name: string;
     full_name: string;
     html_url: string;

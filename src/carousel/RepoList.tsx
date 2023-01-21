@@ -14,7 +14,7 @@ import Carousel from './index';
 
 interface Project {
 
-    id: number;
+    id: string;
     name: string;
     full_name: string;
     html_url: string;
@@ -37,7 +37,7 @@ export default function RepoList() {
                 (data) => {
                     setIsLoaded(true);
                     setProjects(data);
-                    console.log(data)
+                    // console.log(data)
                 },
                 (error) => {
                     setIsLoaded(true);
@@ -68,9 +68,9 @@ export default function RepoList() {
                 >
                     {projects.map(project => (
 
-                        <SwiperSlide>
+                        <SwiperSlide key={project.id}>
 
-                            <Carousel key={project.id} project={project} />
+                            <Carousel project={project} />
 
                         </SwiperSlide>
                         

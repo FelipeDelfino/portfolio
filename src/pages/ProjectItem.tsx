@@ -18,7 +18,7 @@ export default function Repository(props: ProjectProps) {
 
     return (
         <>
-             <Card color='#d7d7d7' bg='#13141C' size ='lg'>
+             <Card color='#d7d7d7' bg='#13141C' size ='lg' key={props.project.id}>
                  <CardHeader>
                      <Heading size='md'> {props.project.name} </Heading>
                  </CardHeader>
