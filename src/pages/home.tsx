@@ -1,11 +1,19 @@
-import { Box, Container, Flex, Grid, GridItem, Heading, Highlight, HStack, IconButton, Img, Link, SimpleGrid, Text, VStack } from "@chakra-ui/react";
-import { AiOutlineGithub } from 'react-icons/ai'
-// import { SlSocialLinkedin } from 'react-icons/sl'
+import { Box, Container, Flex, Grid, GridItem, Heading, Highlight, HStack, Icon, IconButton, Img, Link, SimpleGrid, Stack, Text, VStack } from "@chakra-ui/react";
+import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai'
+import { HiOutlineMail, HiOutlinePhone } from 'react-icons/hi'
+import { RiLinkedinLine } from 'react-icons/ri'
 import { TiSocialLinkedin } from 'react-icons/ti'
 import Image from "next/image";
 import imgeu from '../../public/art1.png'
 
-import ProjectList from "./ProjectList";
+
+
+import RepoList from '../carousel/RepoList';
+import Info from "./ProjectTrigger";
+import Contact from "./Contact";
+import EmailForm from './ContactForm';
+
+
 export default function Index() {
     return (
         <>
@@ -27,13 +35,13 @@ export default function Index() {
                     <GridItem>
                         <Box display='flex' h='100%' alignItems='center' justifyContent='center' >
 
-                            <Link mr='6'>
+                            <Link mr='6' href="#aboutme">
                                 <Text fontSize='18px'> Sobre Mim </Text>
                             </Link>
-                            <Link mr='6'>
+                            <Link mr='6' href="#projects">
                                 <Text fontSize='18px'> Projetos </Text>
                             </Link>
-                            <Link >
+                            <Link href="#contact">
                                 <Text fontSize='18px'> Contato </Text>
                             </Link>
                         </Box>
@@ -45,10 +53,32 @@ export default function Index() {
                             alignItems='center'
                             justifyContent='center'>
                             <Link href='https://github.com/FelipeDelfino'>
-                                <IconButton size='sm' mr='4' borderRadius='full' aria-label="Github" bg='#262A39' icon={<AiOutlineGithub size='25' />} />
+                                <IconButton
+                                    size='sm'
+                                    mr='4'
+                                    borderRadius='full'
+                                    aria-label="Github"
+                                    bg='#262A39'
+                                    colorScheme=""
+                                    _hover={{
+                                        background: "gray.200",
+                                        color: "gray.800",
+                                    }}
+                                    icon={<AiOutlineGithub size='26' />}
+                                />
                             </Link>
                             <Link href='https://www.linkedin.com/in/felipedelfinon/'>
-                                <IconButton size='sm' borderRadius='full' aria-label="Linkedin" colorScheme='linkedin' icon={<TiSocialLinkedin size='25' />} />
+                                <IconButton
+                                    size='sm'
+                                    borderRadius='full'
+                                    aria-label="Linkedin"
+                                    colorScheme='linkedin'
+                                    _hover={{
+                                        background: "gray.200",
+                                        color: "#0e76a8",
+                                    }}
+                                    icon={<TiSocialLinkedin size='26' />}
+                                />
                             </Link>
                         </Box>
                     </GridItem>
@@ -89,7 +119,7 @@ export default function Index() {
                 </SimpleGrid>
             </Container>
 
-            <Flex h='1000px' maxW='100%' bg='#13141C' >
+            <Flex h='1000px' maxW='100%' bg='#13141C' id="aboutme">
                 <Container maxW='8xl' mt='160px' >
 
                     <Grid templateRows='repeat(3, 1fr)'
@@ -298,34 +328,32 @@ export default function Index() {
             </Flex>
 
 
-            <Flex h='1000px' maxW='100%'>
-                <Container maxW='8xl' mt='160px'>
+            <Flex h='1000px' maxW='100%' id="projects">
+                <Container maxW='8xl' mt='120px'>
                     <Grid templateRows='repeat(3, 1fr)'
                         templateColumns='repeat(5, 1fr)'
                         gap={10}
-                        h='700px'
+                        h='00px'
                     >
 
 
 
                         <GridItem bg='' colSpan={3} rowSpan={3}>
-                            <Grid templateRows='repeat(3, 1fr)'
-                                templateColumns='repeat(2, 1fr)'
-                                gap={4}
-                                h=''
-                                w='850px'
-                            >
 
-                                <ProjectList />
-                            </Grid>
+                            <Flex>
+
+                                <RepoList />
+
+                            </Flex>
 
                         </GridItem>
 
                         <GridItem colSpan={2}>
                             <Box display='flex' h='100%' justifyContent='center' alignItems='center'>
-                                <Text fontSize='4xl'>
+                                <Text fontSize='4xl' mr={3}>
                                     Projetos
                                 </Text>
+                                <Info />
                             </Box>
                         </GridItem>
 
@@ -335,46 +363,45 @@ export default function Index() {
                     </Grid>
                 </Container>
             </Flex>
-            <Flex h='1000px' maxW='100%' bg='#13141C'>
+            <Flex h='1000px' maxW='100%' bg='#13141C' id="contact">
                 <Container maxW='8xl' mt='160px'>
                     <Grid templateRows='repeat(3, 1fr)'
-                        templateColumns='repeat(5, 1fr)'
+                        templateColumns='repeat(6, 1fr)'
                         gap={10}
                         h='700px'
-                    // bg='gray.900'
-                    // borderRadius='10'
                     >
-
-
-
-                        <GridItem colSpan={5} rowSpan={1}>
-                            <Box display='flex' h='100%' justifyContent='center' alignItems='center'>
+                        <GridItem colSpan={4} rowSpan={1} >
+                            <Box display='flex'
+                                h='100%'
+                                justifyContent='center'
+                                alignItems='center'>
                                 <Text fontSize='4xl'>
                                     Contato
                                 </Text>
                             </Box>
+                        </GridItem>
+                        <GridItem colSpan={2} rowSpan={3} >
+                            <Box display='flex'
+                                h='100%'
+                                w='100%'
+                                justifyContent='center'
+                                alignItems='center'
+                            >
+
+                                <EmailForm />
+
+                            </Box>
+                        </GridItem>
+                        <GridItem colSpan={4} rowSpan={2} >
+                            {/* <Box display='flex'
+                            h='100%' 
+                            justifyContent='center' 
+                            alignItems='center'> */}
+                            <Contact />
+
+                            {/* </Box> */}
 
                         </GridItem>
-
-
-                        <GridItem colSpan={5} rowSpan={2}>
-                            <VStack>
-
-                                <Text>
-                                    felipe.delfino1508@gmail.com
-                                </Text>
-                                <Text>
-
-                                    +55(11)96440-4327
-                                </Text>
-                                <Text>
-
-                                    linkedin.com/in/felipedelfinon
-                                </Text>
-                            </VStack>
-
-                        </GridItem>
-
                     </Grid>
                 </Container>
             </Flex>

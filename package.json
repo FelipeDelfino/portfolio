@@ -20,7 +20,8 @@
     "react-icons": "^4.6.0",
     "sass": "^1.54.5",
     "scss": "^0.2.4",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "swiper": "^8.4.5"
   },
   "devDependencies": {
     "@types/node": "18.7.6",

@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+
+
+
 import Repository from './ProjectItem';
 
 interface Project {
@@ -34,7 +37,7 @@ export default function ProjectList() {
                 })
     }, [])
     if (error) {
-        return <div>Erro</div>;
+        return <div>Error</div>;
     } else if (!isLoaded) {
         return <div>Loading...</div>;
     } else {
@@ -42,11 +45,12 @@ export default function ProjectList() {
             <>
                 
 
-                {projects && projects.map(project => (
+                {projects.map(project => (
                     <Repository key={project.id} project={project} />
+                    
                     ))}
 
-                
+
             </>
         )
     }
