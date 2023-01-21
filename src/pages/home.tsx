@@ -35,13 +35,30 @@ export default function Index() {
                     <GridItem>
                         <Box display='flex' h='100%' alignItems='center' justifyContent='center' >
 
-                            <Link mr='6' href="#aboutme">
+                            <Link mr='6'
+                                href="#aboutme"
+                                _hover={{
+                                    textDecoration: "none",
+                                    color: "yellow.400",
+                                }}
+                            >
                                 <Text fontSize='18px'> Sobre Mim </Text>
                             </Link>
-                            <Link mr='6' href="#projects">
+                            <Link mr='6'
+                                href="#projects"
+                                _hover={{
+                                    textDecoration: "none",
+                                    color: "yellow.400",
+                                }}
+                            >
                                 <Text fontSize='18px'> Projetos </Text>
                             </Link>
-                            <Link href="#contact">
+                            <Link href="#contact"
+                                _hover={{
+                                    textDecoration: "none",
+                                    color: "yellow.400",
+                                }}
+                            >
                                 <Text fontSize='18px'> Contato </Text>
                             </Link>
                         </Box>
@@ -104,10 +121,15 @@ export default function Index() {
                                 Desenvolvedor Full Stack
 
                             </Text>
-                            <Link href='https://api.whatsapp.com/send?phone=5511964404327e+21&text=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio%2C%20vamos%20conversar%3F'
+                            <Link href='https://api.whatsapp.com/send?phone=5511964404327p&text=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio%2C%20vamos%20conversar%3F'
                                 fontSize='1xl'
                                 color='teal.100'
-                                textDecoration=''>
+                                textStyle='textDecoration'
+                                _hover={{
+                                    textDecoration: "none",
+                                    color: "yellow.400",
+                                }}
+                            >
                                 Vamos Conversar!
                             </Link>
 
