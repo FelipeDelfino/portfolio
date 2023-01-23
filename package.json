@@ -11,17 +11,23 @@
   "dependencies": {
     "@chakra-ui/icons": "^2.0.11",
     "@chakra-ui/react": "^2.4.1",
+    "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@hookform/error-message": "^2.0.1",
+    "@hookform/resolvers": "^2.9.10",
+    "emailjs": "^4.0.1",
     "framer-motion": "^6.5.1",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.42.1",
     "react-icons": "^4.6.0",
     "sass": "^1.54.5",
     "scss": "^0.2.4",
     "styled-components": "^5.3.5",
-    "swiper": "^8.4.5"
+    "swiper": "^8.4.5",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/node": "18.7.6",
