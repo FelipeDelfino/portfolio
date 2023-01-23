@@ -66,7 +66,7 @@ export default function EmailForm(data: ContactInputs) {
         <>
             <Card
                 as="form"
-                bg='gray.800'
+                bg='gray.900'
                 color='white'
                 w='100%'
                 h='80%'
@@ -84,7 +84,8 @@ export default function EmailForm(data: ContactInputs) {
 
                                 <Input
                                     type='text'
-                                    bgColor='gray.900'
+                                    borderColor='#13141C'
+                                    bgColor='#13141C'
                                     borderRadius='md'
                                     focusBorderColor="teal.100"
                                     placeholder='Digite seu Nome'
@@ -102,9 +103,9 @@ export default function EmailForm(data: ContactInputs) {
 
                                 <Input
                                     type='text'
-
                                     focusBorderColor="teal.100"
-                                    bgColor='gray.900'
+                                    borderColor='#13141C'
+                                    bgColor='#13141C'
                                     borderRadius='md'
                                     placeholder='Digite um E-mail válido'
                                     {...register('email')}
@@ -120,9 +121,9 @@ export default function EmailForm(data: ContactInputs) {
                         <Box>
 
                             <Textarea
-
                                 focusBorderColor="teal.100"
-                                bgColor='gray.900'
+                                borderColor='#13141C'
+                                bgColor='#13141C'
                                 borderRadius='md'
                                 placeholder='Digite sua mensagem'
                                 h='200px'
