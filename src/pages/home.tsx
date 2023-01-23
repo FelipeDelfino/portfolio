@@ -14,6 +14,14 @@ import Contact from "./Contact";
 import EmailForm from './ContactForm';
 
 
+
+
+interface ContactForm {
+    name: string;
+    email: string;
+    message:string;
+}
+
 export default function Index() {
     return (
         <>
@@ -410,7 +418,7 @@ export default function Index() {
                                 alignItems='center'
                             >
 
-                                <EmailForm />
+                                <EmailForm name={""} email={""} message={""} />
 
                             </Box>
                         </GridItem>

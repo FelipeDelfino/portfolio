@@ -7,7 +7,7 @@ import { ErrorMessage } from '@hookform/error-message';
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-import  emailjs  from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 
 interface ContactInputs {
@@ -24,10 +24,6 @@ const schema = yup.object().shape({
 
 
 export default function EmailForm(data: ContactInputs) {
-    // const form = useRef<HTMLInputElement>(null);
-    // const [name, setName] = useState('')
-    // const [email, setEmail] = useState('')
-    // const [message, setMessage] = useState('')
 
     const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<ContactInputs>({
         resolver: yupResolver(schema)
@@ -39,33 +35,33 @@ export default function EmailForm(data: ContactInputs) {
         await new Promise(resolve => setTimeout(resolve, 1500));
 
 
-            const templateParams = {
-                from_name: data.name,
-                message: data.message,
-                email: data.email
+        const templateParams = {
+            from_name: data.name,
+            message: data.message,
+            email: data.email
 
-            }
-
-                emailjs.send('service_hlkhgy6', 'template_xqd5lcr', templateParams, 'o6WL1hATjUkbp8vhC')
-                    .then((result: { text: any; }) => {
-                        console.log(result.text);
-                        toast({
-                            title: 'E-mail enviado com Sucesso!',
-                            status: 'success',
-                            position: 'bottom-right',
-                            isClosable: true,
-                          })
-                    }, (error: { text: any; }) => {
-                        console.log(error.text);
-                        toast({
-                            title: 'Falha ao enviar o E-mail!',
-                            status: 'error',
-                            position:'bottom-right',
-                            isClosable: true,
-                          })
-                    });
-            
         }
+
+        emailjs.send('service_hlkhgy6', 'template_xqd5lcr', templateParams, 'o6WL1hATjUkbp8vhC')
+            .then((result: { text: any; }) => {
+                console.log(result.text);
+                toast({
+                    title: 'E-mail enviado com Sucesso!',
+                    status: 'success',
+                    position: 'bottom-right',
+                    isClosable: true,
+                })
+            }, (error: { text: any; }) => {
+                console.log(error.text);
+                toast({
+                    title: 'Falha ao enviar o E-mail!',
+                    status: 'error',
+                    position: 'bottom-right',
+                    isClosable: true,
+                })
+            });
+
+    }
     return (
         <>
             <Card
@@ -97,7 +93,7 @@ export default function EmailForm(data: ContactInputs) {
                                 <Text color='red.500' fontSize='smaller' mb='-4' mt='1'>
                                     <ErrorMessage
                                         errors={errors} name="name" />
-                                    {/* <FormErrorMessage>{errors.name && errors.name.message}</FormErrorMessage> */}
+
                                 </Text>
                             </FormControl>
                         </Box>
@@ -124,7 +120,7 @@ export default function EmailForm(data: ContactInputs) {
                         <Box>
 
                             <Textarea
-                                
+
                                 focusBorderColor="teal.100"
                                 bgColor='gray.900'
                                 borderRadius='md'
@@ -159,8 +155,6 @@ export default function EmailForm(data: ContactInputs) {
                     </Button>
                 </CardFooter>
             </Card>
-            {/* </FormControl> */}
-
         </>
 
     )
