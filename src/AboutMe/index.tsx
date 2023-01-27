@@ -1,11 +1,11 @@
 import { Flex, Container, GridItem, VStack, Heading, Highlight, Img, Box, Grid, Text, useBreakpointValue } from "@chakra-ui/react";
-import { TextAboutMe } from "./TextAboutMe";
-import { Iimage } from './ImageEu';
-import { Imageicon } from "./ImageIcon";
+import  TextAboutMe  from "./TextAboutMe";
+import  Iimage  from './ImageEu';
+import  Imageicon  from "./ImageIcon";
 
 
 
-export function Aboutme() {
+export default function Aboutme() {
 
     const isWideVersion = useBreakpointValue({
         base: false,

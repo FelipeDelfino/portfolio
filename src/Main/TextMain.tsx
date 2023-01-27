@@ -1,7 +1,7 @@
 import { Box, Link, VStack, Text } from "@chakra-ui/react";
 
 
-export function TextMain() {
+export default function TextMain() {
     return (
         <>
             <Box display='flex' alignItems='center' justifyContent='center'>

@@ -1,7 +1,7 @@
 import { VStack, Heading, Highlight, Box, Text } from "@chakra-ui/react";
 
 
-export function TextAboutMe() {
+export default function TextAboutMe() {
     return (
         <Box
             display='flex'

@@ -1,7 +1,7 @@
 import { HStack, Box, Text } from "@chakra-ui/react";
 
 
-export function Logo() {
+export default function Logo() {
     return (
         <>
             <Box display='flex' justifyContent='center'>

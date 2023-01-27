@@ -1,13 +1,11 @@
-import { Container, Grid, GridItem, HStack, IconButton, Box, Text, Link, useBreakpointValue } from "@chakra-ui/react";
-import { AiOutlineGithub } from "react-icons/ai";
-import { TiSocialLinkedin } from "react-icons/ti";
-import { Logo } from "./Logo";
-import { NavLinks } from "./NavLinks";
-import { ButtonsLink } from './Buttons';
+import { Container, Grid, GridItem, useBreakpointValue } from "@chakra-ui/react";
+import  Logo  from "./Logo";
+import  NavLinks  from "./NavLinks";
+import  ButtonsLink  from './Buttons';
 
 
 
-export function Nav() {
+export default function Nav() {
 
     const isWideVersion = useBreakpointValue({
         base: false,

@@ -4,7 +4,7 @@ interface ImageProps {
     showImage?: boolean;
 }
 
-export function Iimage({ showImage = true }: ImageProps) {
+export default function Iimage({ showImage = true }: ImageProps) {
     return (
         <>
             {showImage && (

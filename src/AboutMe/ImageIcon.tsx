@@ -4,7 +4,7 @@ interface IconsProps {
     showIcons?: boolean;
 }
 
-export function Imageicon({ showIcons = true }: IconsProps) {
+export default function Imageicon({ showIcons = true }: IconsProps) {
     return (
         <>
             {showIcons && (

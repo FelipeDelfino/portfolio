@@ -2,7 +2,7 @@ import { Box, Link, IconButton } from "@chakra-ui/react"
 import { AiOutlineGithub } from "react-icons/ai"
 import { TiSocialLinkedin } from "react-icons/ti"
 
-export function ButtonsLink(){
+export default function ButtonsLink(){
     return(
         <Box display='flex'
                         h='100% '

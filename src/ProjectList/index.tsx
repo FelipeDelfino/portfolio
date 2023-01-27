@@ -4,7 +4,7 @@ import Info from "./ProjectTrigger";
 
 
 
-export function Projects() {
+export default function Projects() {
 
     const isWideVersion = useBreakpointValue({
         base: false,

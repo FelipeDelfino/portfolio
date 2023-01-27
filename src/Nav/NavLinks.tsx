@@ -4,7 +4,7 @@ interface LinkProps {
     showLinks?: boolean;
 }
 
-export function NavLinks({showLinks = true}: LinkProps) {
+export default function NavLinks({showLinks = true}: LinkProps) {
     return (
         <>
             {showLinks && (

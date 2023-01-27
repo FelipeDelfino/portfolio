@@ -3,7 +3,7 @@ import EmailForm from "./ContactForm";
 import ContactInfos from "./ContactInfos";
 
 
-export function ContactMain() {
+export default function ContactMain() {
     return (
         <Flex
             h={['125em','105em','100em', '62.5em']}

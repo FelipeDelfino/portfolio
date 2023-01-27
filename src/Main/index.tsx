@@ -1,11 +1,11 @@
 import { Box, Container, Link, SimpleGrid, VStack, Text } from "@chakra-ui/react";
 
 import Image from "next/image";
-import imgeu from '../../../public/art1.png'
-import { TextMain } from './TextMain';
+import imgeu from './../../public/art1.png'
+import  TextMain  from './TextMain';
 
 
-export function Main() {
+export default function Main() {
     return (
         <>
             <Container maxW={['md', '7xl']} minH={['20em', '30em', '62em']} mt='12'>
