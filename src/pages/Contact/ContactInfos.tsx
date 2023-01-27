@@ -3,10 +3,12 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 
 
-export default function Contact() {
+export default function ContactInfos() {
     return (
         <>
-            <SimpleGrid columns={3} spacing={1}>
+            <SimpleGrid 
+            columns={[1,3]} 
+            spacing={1}>
                 <Box w='85%'>
 
                     <Heading size='md' mb='8'>

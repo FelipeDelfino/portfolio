@@ -68,9 +68,12 @@ export default function EmailForm(data: ContactInputs) {
                 as="form"
                 bg='gray.900'
                 color='white'
-                w='100%'
-                h='80%'
+                w={['100%','85%','75%','100%']}
+                h={['65%','60%','65%','60%']}
+                boxShadow='dark-lg'
                 onSubmit={handleSubmit(handlerEmailSend)}
+                
+
             >
                 <CardHeader>
                     <Heading size='md'>Escreva agora um E-mail!</Heading>
@@ -91,7 +94,11 @@ export default function EmailForm(data: ContactInputs) {
                                     placeholder='Digite seu Nome'
                                     {...register('name')}
                                 />
-                                <Text color='red.500' fontSize='smaller' mb='-4' mt='1'>
+                                <Text 
+                                color='red.500' 
+                                fontSize='smaller' 
+                                mb='-4' 
+                                mt='1'>
                                     <ErrorMessage
                                         errors={errors} name="name" />
 
@@ -110,7 +117,11 @@ export default function EmailForm(data: ContactInputs) {
                                     placeholder='Digite um E-mail válido'
                                     {...register('email')}
                                 />
-                                <Text color='red.500' fontSize='smaller' mb='-4' mt='1'>
+                                <Text 
+                                color='red.500' 
+                                fontSize='smaller' 
+                                mb='-4' 
+                                mt='1'>
 
                                     <ErrorMessage
                                         errors={errors} name="email" />
@@ -131,10 +142,14 @@ export default function EmailForm(data: ContactInputs) {
                                 {...register('message')}
 
                             />
-                            <Text color='red.500' fontSize='smaller' mt='1'>
+                            <Text 
+                            color='red.500' 
+                            fontSize='smaller' 
+                            mt='1'>
 
                                 <ErrorMessage
-                                    errors={errors} name="message" />
+                                    errors={errors} 
+                                    name="message" />
                             </Text>
 
                         </Box>
