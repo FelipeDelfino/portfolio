@@ -29,7 +29,7 @@ export default function Aboutme() {
                     h={['0px','0px','0px','700px']}
                 >
                     <GridItem
-                        colSpan={[1, 2]}
+                        colSpan={[2, 2]}
                         >
                         <Box
                             display='flex'
@@ -38,7 +38,7 @@ export default function Aboutme() {
                             alignItems='center'>
                             <Text
                                 fontSize={['2xl','4xl']}
-                                fontWeight='semibold'>
+                                >
                                 Sobre Mim
                             </Text>
                         </Box>

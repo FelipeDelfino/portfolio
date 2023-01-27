@@ -30,7 +30,7 @@ export default function Projects() {
                     h='700px'
                 >
                     <GridItem
-                        colSpan={[1, 2]}
+                        colSpan={[2, 2]}
                         rowSpan={[2, 1]}
 
                     >
