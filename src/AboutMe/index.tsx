@@ -37,7 +37,7 @@ export default function Aboutme() {
                             justifyContent='center'
                             alignItems='center'>
                             <Text
-                                fontSize={['2xl','4xl']}
+                                fontSize={'4xl'}
                                 >
                                 Sobre Mim
                             </Text>

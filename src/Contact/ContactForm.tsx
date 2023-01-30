@@ -1,6 +1,6 @@
+import React from "react";
 
 import { Box, Button, Card, CardBody, CardFooter, CardHeader, FormControl, Text, Heading, Input, Stack, Textarea, useToast } from "@chakra-ui/react";
-
 
 import { useForm, SubmitHandler } from "react-hook-form";
 import { ErrorMessage } from '@hookform/error-message';
@@ -25,11 +25,18 @@ const schema = yup.object().shape({
 
 export default function EmailForm(data: ContactInputs) {
 
-    const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<ContactInputs>({
+    const { 
+        register,
+        reset,
+        handleSubmit,
+        formState,
+        formState: { errors, isSubmitting , isSubmitSuccessful }
+    } = useForm<ContactInputs>({
         resolver: yupResolver(schema)
     });
 
     const toast = useToast()
+    
     const handlerEmailSend: SubmitHandler<ContactInputs> = async (data) => {
 
         await new Promise(resolve => setTimeout(resolve, 1500));
@@ -51,6 +58,7 @@ export default function EmailForm(data: ContactInputs) {
                     position: 'bottom-right',
                     isClosable: true,
                 })
+
             }, (error: { text: any; }) => {
                 console.log(error.text);
                 toast({
@@ -60,19 +68,23 @@ export default function EmailForm(data: ContactInputs) {
                     isClosable: true,
                 })
             });
-
     }
+    React.useEffect(() => {
+        if (formState.isSubmitSuccessful) {
+          reset({ name: '', email: '', message: '' });
+        }
+      }, [formState, reset]);
     return (
         <>
             <Card
                 as="form"
                 bg='gray.900'
                 color='white'
-                w={['100%','85%','75%','100%']}
-                h={['65%','60%','65%','60%']}
+                w={['100%', '85%', '75%', '100%']}
+                h={['65%', '60%', '65%', '60%']}
                 boxShadow='dark-lg'
                 onSubmit={handleSubmit(handlerEmailSend)}
-                
+
 
             >
                 <CardHeader>
@@ -94,11 +106,11 @@ export default function EmailForm(data: ContactInputs) {
                                     placeholder='Digite seu Nome'
                                     {...register('name')}
                                 />
-                                <Text 
-                                color='red.500' 
-                                fontSize='smaller' 
-                                mb='-4' 
-                                mt='1'>
+                                <Text
+                                    color='red.500'
+                                    fontSize='smaller'
+                                    mb='-4'
+                                    mt='1'>
                                     <ErrorMessage
                                         errors={errors} name="name" />
 
@@ -117,11 +129,11 @@ export default function EmailForm(data: ContactInputs) {
                                     placeholder='Digite um E-mail válido'
                                     {...register('email')}
                                 />
-                                <Text 
-                                color='red.500' 
-                                fontSize='smaller' 
-                                mb='-4' 
-                                mt='1'>
+                                <Text
+                                    color='red.500'
+                                    fontSize='smaller'
+                                    mb='-4'
+                                    mt='1'>
 
                                     <ErrorMessage
                                         errors={errors} name="email" />
@@ -142,13 +154,13 @@ export default function EmailForm(data: ContactInputs) {
                                 {...register('message')}
 
                             />
-                            <Text 
-                            color='red.500' 
-                            fontSize='smaller' 
-                            mt='1'>
+                            <Text
+                                color='red.500'
+                                fontSize='smaller'
+                                mt='1'>
 
                                 <ErrorMessage
-                                    errors={errors} 
+                                    errors={errors}
                                     name="message" />
                             </Text>
 

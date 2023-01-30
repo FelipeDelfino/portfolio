@@ -48,8 +48,7 @@ export default function TextAboutMe() {
                         query={[' Javascript', ' React.js', ' Node.js', 'React Native', ' Java', ' SQL', ' C#']}
                         styles={{ px: '1', py: '1', rounded: 'full', bg: 'teal.100', fontSize: 'sm' }}
                     >
-
-                        Linguagens: Javascript, React.js, Node.js, React Native, Java, SQL e C#.
+                        Linguagens/Frameworks: Javascript, React.js, Node.js, React Native, Java, SQL e C#.
                     </Highlight>
                 </Text>
                 <Text
