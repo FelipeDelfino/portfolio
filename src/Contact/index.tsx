@@ -12,7 +12,7 @@ export default function ContactMain() {
             id="contact">
             <Container
                 maxW='8xl'
-                mt='160px'>
+                mt=''>
                 <Grid
 
                     templateRows={['repeat 3, 1fr)', 'repeat(3, 1fr)', 'repeat(3)', 'repeat(3)']}

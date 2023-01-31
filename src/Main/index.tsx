@@ -8,7 +8,7 @@ import  TextMain  from './TextMain';
 export default function Main() {
     return (
         <>
-            <Container maxW={['md', '7xl']} minH={['20em', '30em', '62em']} mt='12'>
+            <Container maxW={['md', '7xl']} minH={['20em', '30em', '62em']} mt='36'>
                 <SimpleGrid columns={2} spacing={5}>
                     <TextMain />
                     <Box
