@@ -9,7 +9,8 @@ export default function ContactMain() {
             h={['125em','105em','100em', '62.5em']}
             maxW='100%'
             bg='#13141C'
-            id="contact">
+            id="contact"
+            mt='2'>
             <Container
                 maxW='8xl'
                 mt=''>
