@@ -1,9 +1,18 @@
-import { Box, Container, Flex, Grid, GridItem, Text } from "@chakra-ui/react";
+import { Box, Container, Flex, Grid, GridItem, Text, useBreakpointValue } from "@chakra-ui/react";
 import EmailForm from "./ContactForm";
 import ContactInfos from "./ContactInfos";
+import FlotanteButton from "./FlotanteButton";
 
 
 export default function ContactMain() {
+    const isWideVersion = useBreakpointValue({
+        base: false,
+        lg: true
+    })
+    const isSmallVersion = useBreakpointValue({
+        base: true,
+        lg: false
+    })
     return (
         <Flex
             h={['125em','105em','100em', '62.5em']}
@@ -55,6 +64,7 @@ export default function ContactMain() {
                     </GridItem>
                 </Grid>
             </Container>
+            <FlotanteButton showButtonIcons={isWideVersion} showSmallButtonIcons={isSmallVersion}/>
         </Flex>
     )
 }

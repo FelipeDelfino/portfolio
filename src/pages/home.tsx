@@ -5,7 +5,6 @@ import  Main  from "../Main";
 import  Aboutme  from "../AboutMe";
 import  Projects  from "../ProjectList";
 import  ContactMain  from '../Contact/index';
-import FlotanteButton from "../Contact/FlotanteButton";
 
 
 export default function Index() {
@@ -16,7 +15,6 @@ export default function Index() {
             <Aboutme />
             <Projects />
             <ContactMain/>
-            <FlotanteButton/>
         </>
     )
 }

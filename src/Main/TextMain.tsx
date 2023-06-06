@@ -9,10 +9,10 @@ export default function TextMain() {
                     <Text as='h1' fontSize={['lg', '2xl', '4xl']}>
                         Olá, bem vindo!
                     </Text>
-                    <Text as='h1' fontSize={['xl', '3xl', '5xl']}>
+                    <Text as='h2' fontSize={['xl', '3xl', '5xl']}>
                         Eu sou o <b> Felipe</b>,
                     </Text>
-                    <Text as='h1'fontSize={['md', 'xl', '3xl']}>
+                    <Text as='h2'fontSize={['md', 'xl', '3xl']}>
                         Desenvolvedor Full Stack
 
                     </Text>

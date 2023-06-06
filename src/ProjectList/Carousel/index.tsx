@@ -57,7 +57,6 @@ export default function RepoList({ showRepo = true, showSmallRepo = false}: Repo
                     <Swiper
                     spaceBetween={20}
                     className="mySwiper"
-                    // style={{height:'600px'}}
                 >
                     {projects.map(project => (
                         <SwiperSlide key={project.id}>
