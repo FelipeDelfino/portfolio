@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Card, CardBody, CardFooter, CardHeader, Heading, Link, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
 interface ProjectProps {
   project: {
@@ -18,11 +19,15 @@ export default function Carousel(props: ProjectProps) {
   return (
     <>
       <Card
+        as={motion.div}
+        whileHover={{ scale: 1.03 }}
+        whileTap={{ scale: 1 }}
+        transition='0.1s linear'
         color='#d7d7d7'
         bg='#13141C'
         size={['sm', 'md', 'lg']}
-        w='100%'
-        h={['100%','80%','90%','100%']}>
+        w='97%'
+        h={['100%', '80%', '90%', '97%']}>
         <CardHeader>
           <Heading
             size={['sm', 'md']}
@@ -34,14 +39,14 @@ export default function Carousel(props: ProjectProps) {
           <Text
             textAlign='justify'
             mb='5'
-            fontSize={['xs','sm']}
+            fontSize={['xs', 'sm']}
             noOfLines={[8, 10, 12, 20]}
           >
             Descrição: {props.project.description}
           </Text>
           <Text
             textAlign='initial'
-            fontSize={['xs','sm']}
+            fontSize={['xs', 'sm']}
           >
             Linguagem:{" " + props.project.language}
           </Text>
@@ -55,7 +60,7 @@ export default function Carousel(props: ProjectProps) {
               color: "yellow.400",
             }}
           >
-            <Text fontSize={['xs','sm']}> Ver no GitHub </Text>
+            <Text fontSize={['xs', 'sm']}> Ver no GitHub </Text>
           </Link>
         </CardFooter>
       </Card>

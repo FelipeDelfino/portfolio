@@ -16,6 +16,7 @@
     "@emotion/styled": "^11.10.5",
     "@hookform/error-message": "^2.0.1",
     "@hookform/resolvers": "^2.9.10",
+    "@vercel/analytics": "^1.0.1",
     "emailjs": "^4.0.1",
     "framer-motion": "^6.5.1",
     "next": "12.2.5",

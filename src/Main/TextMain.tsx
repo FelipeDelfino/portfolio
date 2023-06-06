@@ -6,13 +6,13 @@ export default function TextMain() {
         <>
             <Box display='flex' alignItems='center' justifyContent='center'>
                 <VStack align='stretch' >
-                    <Text fontSize={['lg', '2xl', '4xl']}>
+                    <Text as='h1' fontSize={['lg', '2xl', '4xl']}>
                         Olá, bem vindo!
                     </Text>
-                    <Text fontSize={['xl', '3xl', '5xl']}>
+                    <Text as='h1' fontSize={['xl', '3xl', '5xl']}>
                         Eu sou o <b> Felipe</b>,
                     </Text>
-                    <Text fontSize={['md', 'xl', '3xl']}>
+                    <Text as='h1'fontSize={['md', 'xl', '3xl']}>
                         Desenvolvedor Full Stack
 
                     </Text>

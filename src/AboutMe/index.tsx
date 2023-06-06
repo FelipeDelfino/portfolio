@@ -1,7 +1,7 @@
 import { Flex, Container, GridItem, VStack, Heading, Highlight, Img, Box, Grid, Text, useBreakpointValue } from "@chakra-ui/react";
-import  TextAboutMe  from "./TextAboutMe";
-import  Iimage  from './ImageEu';
-import  Imageicon  from "./ImageIcon";
+import TextAboutMe from "./TextAboutMe";
+import Iimage from './ImageEu';
+import Imageicon from "./ImageIcon";
 
 
 
@@ -14,31 +14,32 @@ export default function Aboutme() {
 
     return (
         <Flex
-            h={['90em','em','70em','68em','62.5em']}
+            h={['90em', 'em', '70em', '68em', '62.5em']}
             maxW='100%'
             bg='#13141C'
             id="aboutme">
             <Container
                 maxW='8xl'
-                mt={['50px','50px','40px','160px']} >
+                mt={['50px', '50px', '40px', '160px']} >
 
                 <Grid
-                    templateRows={['repeat 2, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)','repeat(3, 1fr)']}
-                    templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(1, 1fr)', 'repeat(5, 1fr)']}
+                    templateRows={['repeat 2, 1fr)', 'repeat(2, 1fr)', 'repeat(2, 1fr)', 'repeat(3, 1fr)']}
+                    templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(5, 1fr)']}
                     gap={10}
-                    h={['0px','0px','0px','700px']}
+                    h={['0px', '0px', '0px', '700px']}
                 >
                     <GridItem
                         colSpan={[2, 2]}
-                        >
+                    >
                         <Box
                             display='flex'
                             h='100%'
                             justifyContent='center'
                             alignItems='center'>
                             <Text
+                                as='h2'
                                 fontSize={'4xl'}
-                                >
+                            >
                                 Sobre Mim
                             </Text>
                         </Box>
@@ -47,8 +48,8 @@ export default function Aboutme() {
                     <GridItem
                         colSpan={3}
                         rowSpan={3}
-                        >
-                        <TextAboutMe/>
+                    >
+                        <TextAboutMe />
 
                     </GridItem>
 
@@ -56,13 +57,13 @@ export default function Aboutme() {
                     <GridItem
                         colSpan={2}
                         rowSpan={1}
-                        >
-                        <Iimage showImage={isWideVersion}/>
+                    >
+                        <Iimage showImage={isWideVersion} />
                     </GridItem>
                     <GridItem
                         colSpan={2}
                         ml='10'>
-                        <Imageicon showIcons={isWideVersion}/>
+                        <Imageicon showIcons={isWideVersion} />
                     </GridItem>
                 </Grid>
             </Container>

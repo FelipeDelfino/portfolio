@@ -55,7 +55,7 @@ export default function RepoList({ showRepo = true, showSmallRepo = false}: Repo
             <>
                 {showSmallRepo && (
                     <Swiper
-                    spaceBetween={30}
+                    spaceBetween={20}
                     className="mySwiper"
                     // style={{height:'600px'}}
                 >
@@ -75,7 +75,7 @@ export default function RepoList({ showRepo = true, showSmallRepo = false}: Repo
                             grid={{
                                 rows: 2,
                             }}
-                            spaceBetween={30}
+                            spaceBetween={10}
                             modules={[Grid, Pagination, Navigation]}
                             className="mySwiper"
                             style={{ height: '700px' }}

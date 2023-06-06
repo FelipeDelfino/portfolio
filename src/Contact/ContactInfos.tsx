@@ -16,7 +16,7 @@ export default function ContactInfos() {
                         <Icon boxSize={5} as={HiOutlineMail} ml='4' />
                     </Heading>
                     <Text color='gray.400' mb='14' textAlign='justify'>
-                        Entre em contato comigo pelo email!
+                        Entre em comigo pelo email!
                     </Text>
                     <Text as='b'>
                         felipe.delfino1508@gmail.com
@@ -30,7 +30,7 @@ export default function ContactInfos() {
                         <Icon boxSize={5} as={HiOutlinePhone} ml='4' />
                     </Heading>
                     <Text color='gray.400' mb='8' textAlign='justify'>
-                        Entre em contato comigo por ligação ou mensagem no Whatsapp!
+                        Entre em contato por ligação ou mensagem no Whatsapp!
                     </Text>
                     <Text as='b'>
                         +55(11)96440-4327
@@ -42,7 +42,7 @@ export default function ContactInfos() {
                         <Icon boxSize={5} as={AiOutlineLinkedin} ml='4' />
                     </Heading>
                     <Text color='gray.400' mb='14' textAlign='justify'>
-                        Entre em contato comigo através do Linkedin!
+                        Entre em contato através do Linkedin!
                     </Text>
                     <Text as='b'>
                         linkedin.com/in/felipedelfinon

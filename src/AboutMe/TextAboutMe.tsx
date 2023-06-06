@@ -13,6 +13,7 @@ export default function TextAboutMe() {
                 align='stretch'>
 
                 <Text
+                    as='h6'
                     textAlign='justify'
                     fontSize={['sm', 'md']}>
                     Me chamo Felipe, tenho 21 anos, sou apaixonado por música e amante da
@@ -26,14 +27,17 @@ export default function TextAboutMe() {
                     Formação
                 </Heading>
                 <Text
+                    as='h6'
                     fontSize={['xs', 'sm', 'md']}>
                     - Formado no curso Tecnico em Informática pela ETEC-Itaquaquecetuba (2016-2018).
                 </Text>
                 <Text
+                    as='h6'
                     fontSize={['xs', 'sm', 'md']}>
                     - Cursando Tecnólogo em Gestão da Tecnologia da Informação pela FATEC-Itaquaquecetuba. (2019 - Atualmente)
                 </Text>
                 <Text
+                    as='h6'
                     fontSize={['xs', 'sm', 'md']}>
                     - Cursando Bootcamp de Especialização IGNITE pela Rocketseat. (2022 - Atualmente)
                 </Text>
@@ -43,6 +47,7 @@ export default function TextAboutMe() {
                     Principais Competências
                 </Heading>
                 <Text
+                    as='h6'
                     fontSize={['xs', 'sm', 'md']}>
                     <Highlight
                         query={[' Javascript', ' React.js', ' Node.js', 'React Native', ' Java', ' SQL', ' C#']}
@@ -52,6 +57,7 @@ export default function TextAboutMe() {
                     </Highlight>
                 </Text>
                 <Text
+                    as='h6'
                     textAlign='justify'
                     fontSize={['xs', 'sm', 'md']}>
                     Conhecimento utilizando React.js: Next.js, Typescript, Hooks,
