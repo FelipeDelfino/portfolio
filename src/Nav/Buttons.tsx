@@ -31,7 +31,7 @@ export default function ButtonsLink(){
                                 colorScheme='linkedin'
                                 _hover={{
                                     background: "gray.200",
-                                    color: "#0e76a8",
+                                    color: "#00a0dc",
                                 }}
                                 icon={<TiSocialLinkedin size='26' />}
                             />

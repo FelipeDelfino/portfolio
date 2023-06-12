@@ -129,7 +129,7 @@ export default function FlotanteButton({ showButtonIcons = true, showSmallButton
                     >
 
                         <IconButton
-                            onClick={handleInstagramClick}
+                            onClick={handleFacebookClick}
                             aria-label='facebook'
                             variant="solid"
                             colorScheme='facebook'
