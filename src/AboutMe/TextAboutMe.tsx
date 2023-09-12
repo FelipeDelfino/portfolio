@@ -60,22 +60,25 @@ export default function TextAboutMe() {
                     as='h6'
                     textAlign='justify'
                     fontSize={['xs', 'sm', 'md']}>
-                    Conhecimento utilizando React.js: Next.js, Typescript, Hooks,
-                    Styled Components, SASS, Stitches, Framer Motion, API, API
-                    Routes/Next.js, Radix, Next Auth, React Query, Jest, Headless
-                    CMS, JAMStack com GraphQL, Deploy, CodeGen, Cypress, Server
-                    Components, Suspense API e Streaming SSR.
+                    React.js: Desenvolvimento de aplicações utilizando Next.js, Typescript,
+                    Hooks, Styled Components, SASS, Stitches, Framer Motion e APIs, com destaque
+                    para API Routes/Next.js. Implementação de recursos avançados como Radix, Next
+                    Auth e React Query. Testes conduzidos com Jest, gerenciamento de conteúdo via
+                    Headless CMS e adoção da arquitetura JAMStack com GraphQL. Experiência em Deploy,
+                    CodeGen, Cypress, Server Components, Suspense API e Streaming SSR.
                     <br />
-                    Conhecimento utilizando Node.js: Typescript, APIs com Swagger,
-                    Docker, TypeORM, JWT, bcrypt, Jest, supertest, CI/CD para deploy,
-                    Serverles e Microsserviços.
+                    Node.js: Construção de aplicações robustas com Typescript, incluindo a documentação
+                    de APIs utilizando Swagger. Utilização de Docker para a gestão de ambientes, reforçando
+                    a segurança com JWT e bcrypt. Realização de testes automatizados com Jest e supertest,
+                    juntamente com a implementação de práticas de CI/CD para deploy. Conhecimento
+                    em Serverless e Microsserviços.
                     <br />
-                    Conhecimento utilizando React Native: Typescript, Hooks, Styled
-                    Components, Async Storage, OAuth Authetication, Consumo de API,
-                    UX e Animações, Offline Firste e CI/CD.
+                    React Native: Desenvolvimento de aplicativos móveis com Typescript, aproveitando Hooks
+                    e Styled Components para uma experiência de usuário otimizada. Utilização de Async Storage,
+                    implementação de OAuth Authentication e integração de APIs. Foco na UX, incluindo animações
+                    de alta qualidade, além da implementação da abordagem Offline First e práticas de CI/CD.
                     <br />
-                    Conhecimento utilizando Java: POO, Spring, Thymeleaf, Lombok,
-                    Jquery e MVC.
+                    Experiência em Java: Domínio das tecnologias Spring, Thymeleaf, Lombok e conhecimento sólido em Jquery.
                 </Text>
             </VStack>
         </Box>
