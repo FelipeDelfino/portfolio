@@ -7,7 +7,7 @@ export default function TextAboutMe() {
             display='flex'
             h='100%'
             p={6}
-            mt='15'>
+            mt='12'>
             <VStack
                 spacing={5}
                 align='stretch'>
