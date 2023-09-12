@@ -7,7 +7,7 @@ export default function TextAboutMe() {
             display='flex'
             h='100%'
             p={6}
-            mt='12'>
+            mt='15'>
             <VStack
                 spacing={5}
                 align='stretch'>
@@ -16,7 +16,7 @@ export default function TextAboutMe() {
                     as='h6'
                     textAlign='justify'
                     fontSize={['sm', 'md']}>
-                    Me chamo Felipe, tenho 21 anos, sou apaixonado por música e amante da
+                    Me chamo Felipe, tenho 22 anos, sou apaixonado por música e amante da
                     tecnologia, conheci a programação em 2016 na qual até hoje estudo e busco novos conhecimentos em diferentes linguagens.
                     Levo comigo que não devemos ter medo de errar e de recomeçar, mas
                     sempre retirar bons aprendizados daquilo que surge como um

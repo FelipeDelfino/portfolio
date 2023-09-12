@@ -20,7 +20,7 @@ export default function Aboutme() {
             id="aboutme">
             <Container
                 maxW='8xl'
-                mt={['50px', '50px', '40px', '160px']} >
+                mt={['50px', '50px', '40px', '100px']} >
 
                 <Grid
                     templateRows={['repeat 2, 1fr)', 'repeat(2, 1fr)', 'repeat(2, 1fr)', 'repeat(3, 1fr)']}
